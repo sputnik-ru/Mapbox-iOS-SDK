@@ -1923,6 +1923,13 @@
 
                 _currentCallout.rightAccessoryView = anAnnotation.layer.rightCalloutAccessoryView;
             }
+            
+            if (anAnnotation.layer.calloutContentView) {
+                if ([anAnnotation.layer.calloutContentView isKindOfClass:[UIControl class]])
+                    [anAnnotation.layer.calloutContentView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnCalloutAccessoryWithGestureRecognizer:)]];
+                
+                _currentCallout.contentView = anAnnotation.layer.calloutContentView;
+            }
 
             _currentCallout.delegate = self;
 
