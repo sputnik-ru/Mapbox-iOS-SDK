@@ -1,7 +1,7 @@
 Pod::Spec.new do |m|
 
   m.name    = 'Mapbox-iOS-SDK@sputnik'
-  m.version = '1.6.0-sputnik'
+  m.version = '1.6.1-sputnik'
 
   m.summary          = 'Fork of MapBox iOS SDK with some patches.'
   m.description      = 'An open source toolset for building mapping applications for iOS devices with great flexibility for visual styling, offline use, and customizability.'
