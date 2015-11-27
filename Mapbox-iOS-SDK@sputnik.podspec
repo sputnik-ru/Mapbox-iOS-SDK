@@ -1,34 +1,16 @@
 Pod::Spec.new do |m|
 
-<<<<<<< HEAD:Mapbox-iOS-SDK@sputnik.podspec
   m.name    = 'Mapbox-iOS-SDK@sputnik'
-  m.version = '1.6.1-sputnik'
-=======
-  m.name    = 'Mapbox-iOS-SDK'
-  m.version = '1.6.1'
->>>>>>> release:Mapbox-iOS-SDK.podspec
+  m.version = '1.6.2-sputnik'
 
   m.summary          = 'Fork of MapBox iOS SDK with some patches.'
   m.description      = 'An open source toolset for building mapping applications for iOS devices with great flexibility for visual styling, offline use, and customizability.'
-<<<<<<< HEAD:Mapbox-iOS-SDK@sputnik.podspec
   m.homepage         = 'https://github.com/sputnik-ru/Mapbox-iOS-SDK'
   m.license          = 'BSD'
   m.author           = { 'Denis Zamataev' => 'zamataev@corp.sputnik.ru' }
   m.screenshot       = 'https://raw.github.com/sputnik-ru/Mapbox-iOS-SDK/packaging/screenshot.png'
 
   m.source = { :git => 'https://github.com/sputnik-ru/Mapbox-iOS-SDK.git', :tag => m.version.to_s }
-=======
-  m.homepage         = 'https://mapbox.com/mapbox-ios-sdk-legacy'
-  m.license          = 'BSD'
-  m.author           = { 'Mapbox' => 'mobile@mapbox.com' }
-  m.screenshot       = 'https://raw.github.com/mapbox/mapbox-ios-sdk-legacy/packaging/screenshot.png'
-  m.social_media_url = 'https://twitter.com/Mapbox'
-
-  m.source = {
-    :git => 'https://github.com/mapbox/mapbox-ios-sdk-legacy.git',
-    :tag => m.version.to_s
-  }
->>>>>>> release:Mapbox-iOS-SDK.podspec
 
   m.platform              = :ios
   m.ios.deployment_target = '5.0'
