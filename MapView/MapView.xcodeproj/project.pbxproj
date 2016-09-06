@@ -46,11 +46,11 @@
 		23A0AAEB0EB90AA6003A4521 /* RMFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A0AAEA0EB90AA6003A4521 /* RMFoundation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		25757F4F1291C8640083D504 /* RMCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 25757F4D1291C8640083D504 /* RMCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25757F501291C8640083D504 /* RMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 25757F4E1291C8640083D504 /* RMCircle.m */; };
+		92D07B1B1D7F092700E34C57 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D07B1A1D7F092700E34C57 /* libsqlite3.dylib */; };
 		96492C400FA8AD3400EBA6D2 /* RMGlobalConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 96492C3F0FA8AD3400EBA6D2 /* RMGlobalConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B1EB26C610B5D8E6009F8658 /* RMNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = B1EB26C510B5D8E6009F8658 /* RMNotifications.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B8474BA40EB40094006A0BC1 /* RMDatabaseCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B8474B980EB40094006A0BC1 /* RMDatabaseCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8474BA50EB40094006A0BC1 /* RMDatabaseCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474B990EB40094006A0BC1 /* RMDatabaseCache.m */; };
-		B8474BC10EB4019A006A0BC1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8474BC00EB4019A006A0BC1 /* libsqlite3.dylib */; };
 		B8800FF20EC3A239003E9CDD /* RMMapViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F2031E0EBB65E9003D7B6B /* RMMapViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8800FF30EC3A23D003E9CDD /* RMConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1266929F0EB75C0A00E002D5 /* RMConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8C974220E8A19B2007D16AD /* RMProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = B83E64E30E80E73F001663B6 /* RMProjection.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -233,6 +233,8 @@
 		25757F4E1291C8640083D504 /* RMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCircle.m; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* MapView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		92D07B181D7F089D00E34C57 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		92D07B1A1D7F092700E34C57 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		96492C3F0FA8AD3400EBA6D2 /* RMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGlobalConstants.h; sourceTree = "<group>"; };
 		B1EB26C510B5D8E6009F8658 /* RMNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNotifications.h; sourceTree = "<group>"; };
 		B83E64B60E80E73F001663B6 /* RMPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPixel.h; sourceTree = "<group>"; };
@@ -365,12 +367,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D07B1B1D7F092700E34C57 /* libsqlite3.dylib in Frameworks */,
 				B8C974500E8A19B2007D16AD /* CoreFoundation.framework in Frameworks */,
 				B8C974510E8A19B2007D16AD /* CoreGraphics.framework in Frameworks */,
 				B8C974520E8A19B2007D16AD /* CoreLocation.framework in Frameworks */,
 				B8C974530E8A19B2007D16AD /* UIKit.framework in Frameworks */,
 				B8C974540E8A19B2007D16AD /* QuartzCore.framework in Frameworks */,
-				B8474BC10EB4019A006A0BC1 /* libsqlite3.dylib in Frameworks */,
 				DDEDBBD01A81864800646DBB /* libGRMustache7-iOS.a in Frameworks */,
 				DD97C11616489678007C4652 /* libProj4.a in Frameworks */,
 			);
@@ -446,6 +448,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92D07B1A1D7F092700E34C57 /* libsqlite3.dylib */,
+				92D07B181D7F089D00E34C57 /* libsqlite3.tbd */,
 				B83E65590E80E7EB001663B6 /* CoreFoundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				B83E65630E80E81C001663B6 /* CoreLocation.framework */,
@@ -1085,7 +1089,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
@@ -1093,6 +1097,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -1132,6 +1137,7 @@
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
