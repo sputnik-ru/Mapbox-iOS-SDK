@@ -59,6 +59,7 @@
 @synthesize enabled, clusteringEnabled;
 @synthesize position;
 @synthesize quadTreeNode;
+@synthesize clusteringIdentifier;
 @synthesize isClusterAnnotation=_isClusterAnnotation;
 @synthesize isUserLocationAnnotation;
 
